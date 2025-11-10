@@ -1,0 +1,61 @@
+<!-- CardSave Payment Gateway
+     Hosted Payment Page Solutions - "SERVER POSTBACK"
+     Platform:  PHP Example Code
+     Created:   10th October 2010
+     Updated:   13th January 2012
+     Version:   3.0
+     Created By:CardSave Online 
+     This code is provided on an "as is" basis. It is the responsibility of the developer to test its implementation. -->
+<pre>
+</pre>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Processing...</title>
+	<link rel="canonical" href="https://ehicdirect.org.uk/tests/PaymentFormHostedProcessServer.html" />
+</head>
+<body onload="document.forms['contactForm'].submit();">
+<strong>Processing! Please Wait...</strong>
+<form name="contactForm" id="contactForm" method="post" action="https://mms.cardsaveonlinepayments.com/Pages/PublicPages/PaymentForm.aspx" target="_self">
+	<input type="hidden" name="HashDigest" value="653dbdc854013fe74b1675ae371b2c6b8b409cc4"/>
+	<input type="hidden" name="MerchantID" value="AADeve-9219887"/>
+	<input type="hidden" name="Amount" value="1499"/>                                       
+	<input type="hidden" name="CurrencyCode" value="826"/>
+	<input type="hidden" name="EchoAVSCheckResult" value="true"/>
+	<input type="hidden" name="EchoCV2CheckResult" value="true"/>
+	<input type="hidden" name="EchoThreeDSecureAuthenticationCheckResult" value="false"/>
+	<input type="hidden" name="EchoCardType" value="true"/>
+	<input type="hidden" name="OrderID" value="{ADCDF802-EA38-1FDE-CB63-2F12CBFE624D}"/>
+	<input type="hidden" name="TransactionType" value="SALE"/>
+	<input type="hidden" name="TransactionDateTime" value="2025-08-15 21:05:16 +0100"/>
+	<input type="hidden" name="CallbackURL" value="https://188.191.153.22:8443/sitepreview/http/ehicdirect.org.uk/tests/result.php"/>
+	<input type="hidden" name="OrderDescription" value="EHIC Application - "/>
+	<input type="hidden" name="CustomerName" value=" "/>
+	<input type="hidden" name="Address1" value=""/>
+	<input type="hidden" name="Address2" value=""/>
+	<input type="hidden" name="Address3" value=""/>
+	<input type="hidden" name="Address4" value=""/>
+    <input type="hidden" name="City" value=""/> 
+	<input type="hidden" name="State" value=""/>
+	<input type="hidden" name="PostCode" value=""/>
+	<input type="hidden" name="CountryCode" value="826"/>
+	<input type="hidden" name="EmailAddress" value=""/>
+	<input type="hidden" name="PhoneNumber" value=""/>
+	<input type="hidden" name="EmailAddressEditable" value="true"/>
+	<input type="hidden" name="PhoneNumberEditable" value="true"/>
+	<input type="hidden" name="CV2Mandatory" value="true"/>
+	<input type="hidden" name="Address1Mandatory" value="true"/>
+	<input type="hidden" name="CityMandatory" value="true"/>
+	<input type="hidden" name="PostCodeMandatory" value="true"/>
+	<input type="hidden" name="StateMandatory" value="true"/>
+	<input type="hidden" name="CountryMandatory" value="true"/>
+	<input type="hidden" name="ResultDeliveryMethod" value="SERVER"/>
+	<input type="hidden" name="ServerResultURL" value="https://188.191.153.22:8443/sitepreview/http/ehicdirect.org.uk/tests/PaymentFormHostedResult.php"/>
+	<input type="hidden" name="PaymentFormDisplaysResult" value="false"/>
+	<input type="hidden" name="ServerResultURLCookieVariables" value=""/>
+	<input type="hidden" name="ServerResultURLFormVariables" value=""/>
+	<input type="hidden" name="ServerResultURLQueryStringVariables" value=""/>
+</form>
+</body>
+</html>

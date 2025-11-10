@@ -1,0 +1,66 @@
+# invoke rewrite engine
+RewriteEngine On
+RewriteBase /
+
+Options -Indexes
+<IfModule mod_negotiation.c>
+	Options -MultiViews
+</IfModule>
+
+# Redirect 400,401,403,404,500 to main website
+ErrorDocument 400 https://ehicdirect.org.uk
+ErrorDocument 401 https://ehicdirect.org.uk
+ErrorDocument 403 https://ehicdirect.org.uk
+ErrorDocument 404 https://ehicdirect.org.uk
+ErrorDocument 500 https://ehicdirect.org.uk
+
+# Create pretty URLs
+DirectorySlash Off
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+# End: Create pretty URLs
+
+# Specific redirections
+RewriteRule ^index\.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^p=210$
+RewriteRule ^blog$ blog/p-210.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^gclid=CN_2gL3S3LYCFWbKtAodMTsA_A$
+RewriteRule ^$ gclid-CN_2gL3S3LYCFWbKtAodMTsA_A.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^message=expired$
+RewriteRule ^dev/ehic-admin/login\.php$ dev/ehic-admin/login_message-expired.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^message=expired$
+RewriteRule ^ehic-admin-dev/login\.php$ ehic-admin-dev/login_message-expired.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^message=expired$
+RewriteRule ^ehic-admin-test/login\.php$ ehic-admin-test/login_message-expired.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^message=expired$
+RewriteRule ^ehic-admin/login\.php$ ehic-admin/login_message-expired.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^message=expired$
+RewriteRule ^newform/ehic-admin/login\.php$ newform/ehic-admin/login_message-expired.html [L,R=301,QSD]
+RewriteRule ^newform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.php$ files/home_icczm0cx0rjktundv725nv.html [L,R=301,QSD]
+RewriteRule ^newform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/inc/footer\.php$ files/footer_yan3q7yef7ufss5oubwmgi.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^message=expired$
+RewriteRule ^newform2/ehic-admin/login\.php$ newform2/ehic-admin/login_message-expired.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^action=cancel$
+RewriteRule ^paypal\.php$ paypal_action-cancel.html [L,R=301,QSD]
+
+# Redirect all extensions to html
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.shtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.phtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.jhtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.htm$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.php$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.aspx$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.asp$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.jsp$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.apk$ $1.html [L,NC,R=301]
+# End: Redirect all extensions to html

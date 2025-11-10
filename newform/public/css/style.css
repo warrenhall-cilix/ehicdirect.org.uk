@@ -1,0 +1,204 @@
+@charset "utf-8";
+.logo {
+	background-image: url(https://ehicdirect.org.uk/newform/public/images/template_01.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.menu-bg {
+	background-image: url(https://ehicdirect.org.uk/newform/public/images/template_03.png);
+	background-repeat: no-repeat;
+}
+.body-bg-top {
+	background-image: url(https://ehicdirect.org.uk/newform/public/images/template_04.png);
+	background-repeat: repeat;
+}
+.body-bg-centre {
+	background-image: url(https://ehicdirect.org.uk/newform/public/images/template_05.png);
+	background-repeat: repeat-y;
+}
+.text-box-top {
+	background-image: url(https://ehicdirect.org.uk/newform/public/images/text_area_bg_01.jpg);
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+	background-position: top;
+}
+.text-box-middle {
+	background-image: url(https://ehicdirect.org.uk/newform/public/images/text_area_bg_02.jpg);
+	background-repeat: repeat-y;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+	background-position: top;
+}
+.text-box-bottom {
+	background-image: url(https://ehicdirect.org.uk/newform/public/images/text_area_bg_03.jpg);
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+	background-position: top;
+}
+.body-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	line-height: 16px;
+}
+.body-bg-bottom {
+	background-image: url(https://ehicdirect.org.uk/newform/public/images/template_06.png);
+	background-repeat: no-repeat;
+}
+.header-slogan {
+	background-image: url(https://ehicdirect.org.uk/newform/public/images/template_02.png);
+	background-repeat: no-repeat;
+}
+.menu-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #006bbd;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 15px;
+	vertical-align: middle;
+	padding:0px 10px;
+}
+.menu-text a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #006bbd;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 15px;
+	vertical-align: middle;
+	text-decoration: none;
+	padding:0px 5px;
+}
+H1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #0E73C1;
+	text-align: left;
+}
+.footer-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+}
+.footer-text-2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: left;
+}
+.disclaimer-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: left;
+}
+.menu-text a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #006bbd;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 15px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+.menu-text a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #006bbd;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 15px;
+	vertical-align: middle;
+	text-decoration: underline;
+}
+.menu-text a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #006bbd;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 15px;
+	vertical-align: middle;
+}
+.banner-bg-index {
+	background-image: url(https://ehicdirect.org.uk/newform/public/images/banner_3.jpg);
+	background-repeat: no-repeat;
+}
+div.ehic-clients{display:none;}
+.helplinebox{
+	height: 302px;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    width: 222px;
+    z-index: 111;
+	}
+	.button_new{
+		background: url(https://ehicdirect.org.uk/newform/public/images/button_apply.png) no-repeat;
+		width:238px;
+		height:73px;
+		
+	}
+	.button_new:hover{
+		background-image: url(https://ehicdirect.org.uk/newform/public/images/button_apply_ov.png);
+		width:238px;
+		height:73px;
+	}
+	
+	.button_renewal{
+		background: url(https://ehicdirect.org.uk/newform/public/images/button_renewal.png) no-repeat;
+		width:238px;
+		height:73px;
+		
+	}
+	.button_renewal:hover{
+		background-image: url(https://ehicdirect.org.uk/newform/public/images/button_renewal_ov.png);
+		width:238px;
+		height:73px;
+	}
+	
+	.button_spouse{
+		background: url(https://ehicdirect.org.uk/newform/public/images/button_spouse.png) no-repeat;
+		width:238px;
+		height:73px;
+		
+	}
+	.button_spouse:hover{
+		background-image: url(https://ehicdirect.org.uk/newform/public/images/button_spouse_ov.png);
+		width:238px;
+		height:73px;
+	}
+	
+	.button_lostl{
+		background: url(https://ehicdirect.org.uk/newform/public/images/button_lostl.png) no-repeat;
+		width:238px;
+		height:73px;
+		
+	}
+	.button_lostl:hover{
+		background-image: url(https://ehicdirect.org.uk/newform/public/images/button_lostl_ov.png);
+		width:238px;
+		height:73px;
+	}
+	
+	.button_nhs{
+		background: url(https://ehicdirect.org.uk/newform/public/images/button_nhs.png) no-repeat;
+		width:238px;
+		height:73px;
+		
+	}
+	.button_nhs:hover{
+		background-image: url(https://ehicdirect.org.uk/newform/public/images/button_nhs_ov.png);
+		width:238px;
+		height:73px;
+	}

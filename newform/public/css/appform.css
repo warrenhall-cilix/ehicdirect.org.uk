@@ -1,0 +1,217 @@
+@charset "utf-8";
+form.appform{
+	max-width:650px;
+	
+}
+
+.appform fieldset {
+  position: relative;
+  display: block;
+  margin: 0 auto 24px auto;
+  padding: 30px;
+  width: 590px;
+  background-color: #d6d7d8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#d6d7d8));
+  background: -webkit-linear-gradient(top, #f8f8f8, #d6d7d8);
+  background: -moz-linear-gradient(top, #f8f8f8, #d6d7d8);
+  background: -ms-linear-gradient(top, #f8f8f8, #d6d7d8);
+  background: -o-linear-gradient(top, #f8f8f8, #d6d7d8);
+  -pie-background: linear-gradient(#f8f8f8, #d6d7d8);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#d6d7d8');
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  overflow:visible;
+}
+.appform fieldset .legend {
+  display: block;
+  margin: 0 0 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0E73C1; 
+}
+select,textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+	color: #555555;
+}
+
+.appform input:hover, .appform select:hover, .appform input:focus, .appform select:focus, .appform textarea:hover, .appform textarea:focus{border:1px solid #ccc; background:#fff;}
+.appform input[type="text"], .appform input[type="password"] {
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 7px 9px;
+	width:350px;
+	
+}
+.appform .tooltips a {
+    /*background: url("https://ehicdirect.org.uk/newform/public/images/info.png") no-repeat scroll 0 0 transparent;*/
+    cursor: pointer;
+    display:inline-block;
+    height: 28px;
+    /*text-indent: -9999px;*/
+    width: 28px;
+	margin:0 0 0 5px;
+	vertical-align:top;
+}
+.appform fieldset .green {
+	padding:6px 16px;
+	border:2px solid #B0E0E6;
+  color: #404041;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px #ffffff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #dcddde;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dcddde));
+  background: -webkit-linear-gradient(top, #ffffff, #dcddde);
+  background: -moz-linear-gradient(top, #ffffff, #dcddde);
+  background: -ms-linear-gradient(top, #ffffff, #dcddde);
+  background: -o-linear-gradient(top, #ffffff, #dcddde);
+  -pie-background: linear-gradient(#ffffff, #dcddde);
+}
+.appform fieldset .button {
+  position: absolute;
+  right: 20px;
+  width: auto;
+  font-size: 14px;
+  margin: 3px;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.75);
+}
+.appform .continue-button {
+  float:right;
+  width: auto;
+  font-size: 14px;
+  margin: 3px 20px 3px 3px;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.75);
+  padding:6px 16px;
+  border:2px solid #B0E0E6;
+  color: #404041;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px #ffffff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #dcddde;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dcddde));
+  background: -webkit-linear-gradient(top, #ffffff, #dcddde);
+  background: -moz-linear-gradient(top, #ffffff, #dcddde);
+  background: -ms-linear-gradient(top, #ffffff, #dcddde);
+  background: -o-linear-gradient(top, #ffffff, #dcddde);
+  -pie-background: linear-gradient(#ffffff, #dcddde);
+}
+
+.appform fieldset .button:hover {
+  background-color: #c2c3c4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#c2c3c4));
+  background: -webkit-linear-gradient(top, #dedede, #c2c3c4);
+  background: -moz-linear-gradient(top, #dedede, #c2c3c4);
+  background: -ms-linear-gradient(top, #dedede, #c2c3c4);
+  background: -o-linear-gradient(top, #dedede, #c2c3c4);
+  -pie-background: linear-gradient(#dedede, #c2c3c4);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#dedede', endColorstr='#c2c3c4');
+  border-bottom: none;
+  color: #404041;
+}
+.appform fieldset ul{   
+	margin: 0;
+	padding: 0;
+  	list-style: none outside;
+  	overflow: auto;
+}
+.appform fieldset ul li{   
+	display: inline;
+  margin-right: 12px;
+  background: none;
+  padding: 0;
+}
+.appform fieldset li .dob, .appform fieldset li .dobsp, .appform fieldset li .childdob, .appform fieldset li .ExDate {
+  width: auto !important;
+  text-align: center;
+}
+.appform fieldset li .year, .appform fieldset li .yearsp, .appform fieldset li .childyear {
+  width: 74px !important;
+}
+.appform label {
+    /*display: block;
+    float: left;*/
+    text-align: left;
+    width: 220px;
+	font-weight:bold;
+	font-size:12px;
+	margin:0 3px 0 3px;
+}
+.move-forward label{width:100%;}
+.move-forward input[type="checkbox"]{margin:0;}
+.demo-text{
+	color: #999;
+    /*display: block;*/
+    font-size: 10px;
+    font-style: italic;
+	width:220px;
+	
+	}
+.nin-demo-img{margin:0 50px 0 0;}
+
+.appform fieldset table td div .question {
+	display:none;
+    /*background: url("https://ehicdirect.org.uk/newform/public/img/question.png") no-repeat scroll 0 0 transparent;
+    bottom: 16px;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    position: absolute;
+    right: 6px;
+    text-indent: -9999px;
+    width: 16px;*/
+}
+.appform .phone, .appform #o_title, .appform #postcode{width:160px !important;}
+.appform #result{display:table-row;}
+
+/**********Error Message************/
+.success_messages{
+	color: #319021;
+    font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:12px 5px 12px 48px;
+	margin:0px 0px 15px 0px;
+	background:#d4ffcd url(https://ehicdirect.org.uk/newform/public/images/success.jpg) 5px 5px no-repeat;
+	border:1px solid #9adf8f;
+	min-height:25px;
+}
+.error_messages{
+	color: #871414;
+    font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:12px 5px 12px 48px;
+	margin:0px 0px 15px 0px;
+	background:#ffd2d3 url(https://ehicdirect.org.uk/newform/public/images/error.jpg) 5px 5px no-repeat;
+	border:1px solid #df8f90;
+	min-height:25px;
+}
+.error_messages li,.success_messages li{
+	list-style:none;
+	padding-top:5px;
+}
+hr{margin:0;
+border-color:#5a5a5a;}
+.lost_pop{display:inline !important; width:auto !important; height:auto !important; margin:0 !important; color:#fff !important; text-decoration:underline !important;}

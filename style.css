@@ -1,0 +1,167 @@
+@charset "utf-8";
+body {
+
+	background: rgba(30,80,213,1)!important;
+	background: -moz-linear-gradient(top, rgba(30,80,213,1) 0, rgba(94,212,255,1) 51%, rgba(255,255,255,1) 98%, rgba(255,255,255,1) 100%)!important;
+	background: -webkit-gradient(left top, left bottom, color-stop(0, rgba(30,80,213,1)), color-stop(51%, rgba(94,212,255,1)), color-stop(98%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)))!important;
+	background: -webkit-linear-gradient(top, rgba(30,80,213,1) 0, rgba(94,212,255,1) 51%, rgba(255,255,255,1) 98%, rgba(255,255,255,1) 100%)!important;
+	background: -o-linear-gradient(top, rgba(30,80,213,1) 0, rgba(94,212,255,1) 51%, rgba(255,255,255,1) 98%, rgba(255,255,255,1) 100%)!important;
+	background: -ms-linear-gradient(top, rgba(30,80,213,1) 0, rgba(94,212,255,1) 51%, rgba(255,255,255,1) 98%, rgba(255,255,255,1) 100%)!important;
+	background: linear-gradient(to bottom, rgba(30,80,213,1) 0, rgba(94,212,255,1) 51%, rgba(255,255,255,1) 98%, rgba(255,255,255,1) 100%)!important;
+filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e50d5', endColorstr='#ffffff', GradientType=0 )!important;
+	background-repeat: repeat-x!important;
+	background:#4f6493 !important;
+	width: 96%!important
+}
+.logo {
+	background-image: url(images/template_01.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.menu-bg {
+	background-image: url(images/template_03.png);
+	background-repeat: no-repeat;
+}
+.body-bg-top {
+	background-image: url(images/template_04.png);
+	background-repeat: repeat;
+}
+.body-bg-centre {
+	background-image: url(images/template_05.png);
+	background-repeat: repeat-y;
+}
+.text-box-top {
+	background-image: url(images/text_area_bg_01.jpg);
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+	background-position: top;
+}
+.text-box-middle {
+	background-image: url(images/text_area_bg_02.jpg);
+	background-repeat: repeat-y;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+	background-position: top;
+}
+.text-box-bottom {
+	background-image: url(images/text_area_bg_03.jpg);
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+	background-position: top;
+}
+.body-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	line-height: 16px;
+}
+.body-bg-bottom {
+	background-image: url(images/template_06.png);
+	background-repeat: no-repeat;
+}
+.header-slogan {
+	background-image: url(images/template_02.png);
+	background-repeat: no-repeat;
+}
+.menu-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #006bbd;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 15px;
+	vertical-align: middle;
+	padding:0px 10px;
+}
+.menu-text a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #006bbd;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 15px;
+	vertical-align: middle;
+	text-decoration: none;
+	padding:0px 5px;
+}
+H1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #0E73C1;
+	text-align: left;
+}
+H2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #0E73C1;
+	text-align: left;
+}
+H3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0E73C1;
+	text-align: left;
+}
+.footer-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+}
+.footer-text-2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: left;
+}
+.disclaimer-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: left;
+}
+.menu-text a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #006bbd;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 15px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+.menu-text a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #006bbd;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 15px;
+	vertical-align: middle;
+	text-decoration: underline;
+}
+.menu-text a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #006bbd;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 15px;
+	vertical-align: middle;
+}
+.banner-bg-index {
+	background-image: url(banner_3.jpg);
+	background-repeat: no-repeat;
+}
+.toplinks { font-family:Arial, Helvetica, sans-serif; text-decoration:none; float:right; margin-right:42px; font-size:14px; line-height:18px; color:#FFF; text-align:right; }
+.toplinks a:link,
+.toplinks a:visited{ color:#FFF; text-decoration:none;}

@@ -1,0 +1,32 @@
+# Redirect 400,401,403,404,500 to main website
+error_page 400 401 403 404 500 https://ehicdirect.org.uk
+
+# Create pretty URLs
+# End: Create pretty URLs
+
+# Specific redirections
+if ($args ~* ^p=210$){ rewrite ^/blog$ /blog/p-210.html? permanent; }
+if ($args ~* ^gclid=CN_2gL3S3LYCFWbKtAodMTsA_A$){ rewrite ^/$ /gclid-CN_2gL3S3LYCFWbKtAodMTsA_A.html? permanent; }
+if ($args ~* ^message=expired$){ rewrite ^/dev/ehic-admin/login\.php$ /dev/ehic-admin/login_message-expired.html? permanent; }
+if ($args ~* ^message=expired$){ rewrite ^/ehic-admin-dev/login\.php$ /ehic-admin-dev/login_message-expired.html? permanent; }
+if ($args ~* ^message=expired$){ rewrite ^/ehic-admin-test/login\.php$ /ehic-admin-test/login_message-expired.html? permanent; }
+if ($args ~* ^message=expired$){ rewrite ^/ehic-admin/login\.php$ /ehic-admin/login_message-expired.html? permanent; }
+if ($args ~* ^message=expired$){ rewrite ^/newform/ehic-admin/login\.php$ /newform/ehic-admin/login_message-expired.html? permanent; }
+rewrite ^/newform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.php$ /files/home_icczm0cx0rjktundv725nv.html? permanent;
+rewrite ^/newform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/home\.phpnewform/inc/footer\.php$ /files/footer_yan3q7yef7ufss5oubwmgi.html? permanent;
+if ($args ~* ^message=expired$){ rewrite ^/newform2/ehic-admin/login\.php$ /newform2/ehic-admin/login_message-expired.html? permanent; }
+if ($args ~* ^action=cancel$){ rewrite ^/paypal\.php$ /paypal_action-cancel.html? permanent; }
+
+# Redirect all extensions to html
+if ($is_args = ''){
+	rewrite ^([^.]*)\.shtml$ $1.html permanent;
+	rewrite ^([^.]*)\.phtml$ $1.html permanent;
+	rewrite ^([^.]*)\.jhtml$ $1.html permanent;
+	rewrite ^([^.]*)\.htm$ $1.html permanent;
+	rewrite ^([^.]*)\.php$ $1.html permanent;
+	rewrite ^([^.]*)\.aspx$ $1.html permanent;
+	rewrite ^([^.]*)\.asp$ $1.html permanent;
+	rewrite ^([^.]*)\.jsp$ $1.html permanent;
+	rewrite ^([^.]*)\.apk$ $1.html permanent;
+}
+# End: Redirect all extensions to html

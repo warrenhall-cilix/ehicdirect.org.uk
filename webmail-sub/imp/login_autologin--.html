@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<!--   IMP: Copyright 2001-2009 The Horde Project.  IMP is under the GPL.  -->
+<!-- Horde Project: http://www.horde.org/ | IMP: http://www.horde.org/imp/ -->
+<!--        GNU Public License: http://www.fsf.org/copyleft/gpl.html       -->
+<html lang="en-US"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<script type="text/javascript">//<![CDATA[
+var IMP = {"conf":{"hasDOM":false,"IMP_ALL":0,"isIE":false,"pop3":false,"fixed_folders":[],"js_editor":"xinha"},"text":{"compose_cancel":"Cancelling this message will permanently discard its contents.\nAre you sure you want to do this?","compose_discard":"Doing so will discard this message permanently.","compose_recipient":"You must specify a recipient.","compose_sigreplace":"The signature was successfully replaced.","compose_signotreplace":"The signature could not be replaced.","compose_nosubject":"The message does not have a Subject entered.\nSend message without a Subject?","compose_file":"File","compose_attachment":"Attachment","compose_inline":"Inline","mailbox_submit":"You must select at least one message first.","mailbox_delete":"Are you sure you wish to PERMANENTLY delete these messages?","mailbox_selectone":"You must select at least one message first.","yes":"Yes","no":"No","contacts_select":"You must select an address first.","contacts_closed":"The message being composed has been closed. Exiting.","contacts_called":"This window must be called from a compose window.","folders_select":"Please select a folder before you perform this action.","folders_oneselect":"Only one folder should be selected for this action.","folders_subfolder1":"You are creating a sub-folder to","folders_subfolder2":"Please enter the name of the new folder:","folders_toplevel":"You are creating a top-level folder.\nPlease enter the name of the new folder:","folders_download1":"All messages in the following folder(s) will be downloaded into one MBOX file:","folders_download2":"This may take some time. Are you sure you want to continue?","folders_rename1":"You are renaming the folder:","folders_rename2":"Please enter the new name:","folders_no_rename":"This folder may not be renamed:","search_select":"Please select at least one folder to search.","popup_block":"A popup window could not be opened. Perhaps you have set your browser to block popup windows?","login_username":"Please provide your username.","login_password":"Please provide your password.","spam_report":"Are you sure you wish to report this message as spam?","notspam_report":"Are you sure you wish to report this message as innocent?","newfolder":"You are copying\/moving to a new folder.\nPlease enter a name for the new folder:\n","target_mbox":"You must select a target mailbox first."}};
+//]]></script>
+<script type="text/javascript" src="http://webmail.ehicdirect.org.uk/js/prototype.js"></script>
+<script type="text/javascript" src="http://webmail.ehicdirect.org.uk/js/horde-prototype.js"></script>
+<script type="text/javascript" src="http://webmail.ehicdirect.org.uk/js/accesskeys.js"></script>
+<script type="text/javascript" src="http://webmail.ehicdirect.org.uk/imp/js/login.js"></script>
+<link href="http://webmail.ehicdirect.org.uk/themes/screen.css" rel="stylesheet" type="text/css"/>
+<link href="http://webmail.ehicdirect.org.uk/themes/wps_sober/screen.css" rel="stylesheet" type="text/css"/>
+<link href="http://webmail.ehicdirect.org.uk/imp/themes/screen.css" rel="stylesheet" type="text/css"/>
+<link href="http://webmail.ehicdirect.org.uk/imp/themes/wps_sober/screen.css" rel="stylesheet" type="text/css"/>
+<title>Mail :: Welcome to Horde</title>
+	<link rel="canonical" href="https://ehicdirect.org.uk/webmail-sub/imp/login_autologin--.html" />
+<link  rel="SHORTCUT ICON"/>
+</head>
+<body>
+<script type="text/javascript">//<![CDATA[
+var autologin_url = '/imp/login.php?autologin=&amp;server_key=';var show_list = 0;var ie_clientcaps = 0;var lang_url = null;var protocols = [];var change_smtphost = 0;var imp_auth = 1;var nomenu = 1
+//]]></script>
+<form name="imp_login" id="imp_login" action="../../webmail-sub/imp/redirect.html" method="post" target="_parent"> 
+<input type="hidden" name="Horde3" value="bdtc1k6mom6jd4ldu8r8uvadi3"/>
+<input type="hidden" name="actionID" value=""/> 
+<input type="hidden" name="url" value=""/> 
+<input type="hidden" name="load_frameset" value="1"/> 
+<input type="hidden" name="autologin" value="0"/> 
+<input type="hidden" name="anchor_string" id="anchor_string" value=""/> 
+<input type="hidden" name="server_key" value="imap"/> 
+<div id="menu"> 
+ <h1 align="center">Welcome to Horde</h1> 
+</div> 
+<table width="100%"> 
+ <tr> 
+  <td align="center"> 
+   <table align="center"> 
+    <tr> 
+     <td class="light rightAlign"><label for="imapuser"><strong>Username</strong></label></td> 
+     <td class="light leftAlign" nowrap="nowrap"> 
+      <input type="text" tabindex="1" id="imapuser" name="imapuser" value="" style="direction:ltr"/>  
+     </td> 
+    </tr> 
+    <tr> 
+     <td class="light rightAlign"><label for="pass"><strong>Password</strong></label></td> 
+     <td class="leftAlign"> 
+      <input type="password" tabindex="2" id="pass" name="pass" style="direction:ltr"/> 
+     </td> 
+    </tr> 
+    <tr> 
+     <td class="light rightAlign"><label for="new_lang"><strong>Language</strong></label></td> 
+     <td class="light leftAlign"> 
+      <select tabindex="3" id="new_lang" name="new_lang" onchange="selectLang()"> 
+       <option value="ar_OM">&#x202d;Arabic (Oman) &#x202e;(&#x0627;&#x0644;&#x0639;&#x0631;&#x0628;&#x064a;&#x0629;)</option> 
+       <option value="ar_SY">&#x202d;Arabic (Syria) &#x202e;(&#x0627;&#x0644;&#x0639;&#x0631;&#x0628;&#x064a;&#x0629;)</option> 
+       <option value="id_ID">Bahasa Indonesia</option> 
+       <option value="bs_BA">Bosanski</option> 
+       <option value="bg_BG">&#x202d;Bulgarian (&#x0411;&#x044a;&#x043b;&#x0433;&#x0430;&#x0440;&#x0441;&#x043a;&#x0438;)</option> 
+       <option value="ca_ES">Catal&#xe0;</option> 
+       <option value="cs_CZ">&#x010c;esky</option> 
+       <option value="zh_CN">&#x202d;Chinese (Simplified) (&#x7b80;&#x4f53;&#x4e2d;&#x6587;)</option> 
+       <option value="zh_TW">&#x202d;Chinese (Traditional) (&#x6b63;&#x9ad4;&#x4e2d;&#x6587;)</option> 
+       <option value="da_DK">Dansk</option> 
+       <option value="de_DE">Deutsch</option> 
+       <option value="en_US" selected="selected">&#x202d;English (American)</option> 
+       <option value="en_GB">&#x202d;English (British)</option> 
+       <option value="en_CA">&#x202d;English (Canadian)</option> 
+       <option value="es_ES">Espa&#xf1;ol</option> 
+       <option value="et_EE">Eesti</option> 
+       <option value="eu_ES">Euskara</option> 
+       <option value="fr_FR">Fran&#xe7;ais</option> 
+       <option value="gl_ES">Galego</option> 
+       <option value="el_GR">&#x202d;Greek (&#x0395;&#x03bb;&#x03bb;&#x03b7;&#x03bd;&#x03b9;&#x03ba;&#x03ac;)</option> 
+       <option value="he_IL">&#x202d;Hebrew &#x202e;(&#x05e2;&#x05d1;&#x05e8;&#x05d9;&#x05ea;)</option> 
+       <option value="hr_HR">Hrvatski</option> 
+       <option value="is_IS">&#xcd;slenska</option> 
+       <option value="it_IT">Italiano</option> 
+       <option value="ja_JP">&#x202d;Japanese (&#x65e5;&#x672c;&#x8a9e;)</option> 
+       <option value="km_KH">&#x202d;Khmer (&#x1781;&#x17d2;&#x1798;&#x17c2;&#x179a;)</option> 
+       <option value="ko_KR">&#x202d;Korean (&#xd55c;&#xad6d;&#xc5b4;)</option> 
+       <option value="lv_LV">Latvie&#x0161;u</option> 
+       <option value="lt_LT">Lietuvi&#x0173;</option> 
+       <option value="mk_MK">&#x202d;Macedonian (&#x041c;&#x0430;&#x043a;&#x0435;&#x0434;&#x043e;&#x043d;&#x0441;&#x043a;&#x0438;)</option> 
+       <option value="hu_HU">Magyar</option> 
+       <option value="nl_NL">Nederlands</option> 
+       <option value="nb_NO">Norsk bokm&#xe5;l</option> 
+       <option value="nn_NO">Norsk nynorsk</option> 
+       <option value="fa_IR">&#x202d;Persian &#x202e;(&#x0641;&#x0627;&#x0631;&#x0633;&#x0649;)</option> 
+       <option value="pl_PL">Polski</option> 
+       <option value="pt_PT">Portugu&#xea;s</option> 
+       <option value="pt_BR">Portugu&#xea;s Brasileiro</option> 
+       <option value="ro_RO">Rom&#xe2;n&#xe4;</option> 
+       <option value="ru_RU">&#x202d;Russian (&#x0420;&#x0443;&#x0441;&#x0441;&#x043a;&#x0438;&#x0439;)</option> 
+       <option value="sk_SK">Sloven&#x010d;ina</option> 
+       <option value="sl_SI">Sloven&#x0161;&#x010d;ina</option> 
+       <option value="fi_FI">Suomi</option> 
+       <option value="sv_SE">Svenska</option> 
+       <option value="th_TH">&#x202d;Thai (&#x0e44;&#x0e17;&#x0e22;)</option> 
+       <option value="uk_UA">&#x202d;Ukrainian (&#x0423;&#x043a;&#x0440;&#x0430;&#x0457;&#x043d;&#x0441;&#x044c;&#x043a;&#x0430;)</option> 
+      </select> 
+     </td> 
+    </tr> 
+    <tr> 
+     <td>&nbsp;</td> 
+     <td class="light leftAlign"> 
+      <input type="submit" class="button" name="loginButton" id="loginButton" tabindex="4" value="Login" onclick="return submit_login();"/> 
+     </td> 
+    </tr> 
+   </table> 
+  </td> 
+ </tr> 
+</table> 
+</form> 
+<!-- This file contains any "Message Of The Day" Type information -->
+<!-- It will be included below the log-in form on the login page. -->
+<br/>
+<table width="100%"><tr><td align="center"></td></tr></table>
+<script language="JavaScript1.5" type="text/javascript">
+<!--
+var _setHordeTitle = 1;
+try {
+    if (document.title && parent.frames.horde_main) parent.document.title = document.title;
+} catch (e) {
+}
+// -->
+</script>
+<script type="text/javascript">
+<!--
+if (typeof(_setHordeTitle) == 'undefined' && document.title && parent.frames.horde_main) parent.document.title = document.title;
+// -->
+</script>
+<script type="text/javascript">//<![CDATA[
+setFocus()
+//]]></script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+/*
+
+Theme Name: New EhicBlog
+Theme URI: //buzzpoint.co.uk
+Description: Ehic-blog Theme for WordPress. Using Twitter Bootstrap 3.3.4
+Author:Kaleem Abbas
+Author URI: //buzzpoint.co.uk
+
+=======
+License: GNU General Public License
+License URI: license.txt
+
+This theme, like WordPress, is licensed under the GPL.
+
+The development of BootstrapWP was powered by Sublime Text 2 and lots of Diet Coke.
+Use this starter theme to make something cool.  Please share the results with me via Twitter @rachelbaker.
+Enjoy!
+
+*/
+/********************************************************
+
+Comfortable with LESS?  Check out the /assets/css/less folder where the bootstrapwp.less file is the master complier
+
+Not comfortable with LESS?  You can override the compiled bootstrapwp.css file by adding custom styles here.
+-------------------------------------------------- */
+@import url(../../../../resp/public/css/font-awesome.min_v-4.0.4.css);
+.navbar .nav>li>a, footer a:hover {
+	text-decoration: none
+}
+body {
+	color: #000;
+	background-color: #4f6493!important;
+	font-size: 13px;
+	line-height: 16px;
+	text-align: left
+}
+.navbar-header, .navbar-inverse .brand {
+	background: url(img/sprite.png) 0 -240px no-repeat rgba(0,0,0,0)!important;
+	height: 57px;
+	margin: 0 auto;
+	width: 947px;
+	clear: both
+}
+.hidden-desktop {
+	display: none
+}
+.navbar-header {
+	padding: 0
+}
+.container {
+	max-width: 1024px
+}
+.padding80 {
+	padding: 0 80px
+}
+.navbar-inverse .brand {
+	padding: 0;
+	text-indent: -10000px
+}
+.navbar-inverse .navbar-inner {
+	background: 0 0;
+	border: none;
+	box-shadow: none
+}
+.navbar .nav {
+	background-color: #fefefe;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#bfbfbf));
+	background: -webkit-linear-gradient(top, #fefefe, #bfbfbf);
+	background: -moz-linear-gradient(top, #fefefe, #bfbfbf);
+	background: -ms-linear-gradient(top, #fefefe, #bfbfbf);
+	background: -o-linear-gradient(top, #fefefe, #bfbfbf);
+	-pie-background: linear-gradient(#fefefe, #bfbfbf);
+filter:progid:dximagetransform.microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#bfbfbf');
+	border: 1px solid #006bbd;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin-bottom: 20px;
+	position: relative;
+	width: 961px;
+	border-radius: 8px;
+	margin-top: 20px;
+	padding: 0 15px!important
+}
+.navbar .nav>li>a {
+	color: #006bbd;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 28px;
+	text-align: left;
+	text-indent: 15px;
+	vertical-align: middle;
+	padding: 0 5px !important;
+	display: inline !important;
+	text-shadow: none
+}
+.navbar-inverse .nav>li>a:focus, .navbar-inverse .nav>li>a:hover {
+	color: #006bbd;
+	text-decoration: none
+}
+.navbar li::before {
+	content: "|";
+	padding: 0 12px;
+	color: #006bbd
+}
+.navbar li:first-child::before {
+	content: none;
+	padding: 0
+}
+.fb_cls_img {
+	background-image: url(img/sprite.png);
+	background-position: -40px -147px;
+	background-repeat: no-repeat;
+	float: right;
+	height: 25px;
+	width: 25px;
+	margin-right: 80px
+}
+.center-box {
+	background-color: #f2f2f2;
+	border-radius: 8px;
+	padding: 5px 10px;
+	margin-bottom: 10px
+}
+.page-title {
+	margin-left: 10px;
+	font-size: 27px
+}
+.hmh1, h1 {
+	color: #006bbd;
+	font-size: 20px;
+	line-height: 26px
+}
+h2 { 
+	color: #007CCC;
+	font-size: 14px; 
+	margin: 20px 10px 0;
+	line-height: 14px
+}
+.type-post a>h2 {
+	font-size: 20px; 
+	margin: 20px 0 10px;
+}
+.lead-2 {
+    font-size: 21px;
+	font-weight: normal;
+    line-height: 30px;
+    margin: 20px 11px;
+}
+h4.widget-title {
+	background: #1b73ce;
+	border-radius: 4px;
+	clear: both;
+	color: #fff;
+	font-size: 15px;
+	line-height: 20px;
+	margin: 0 0 10px;
+	padding: 5px 10px
+}
+.breadcrumb, .well {
+	background-color: #f2f2f2;
+	border-radius: 8px
+}
+.widget ul li {
+	border-bottom: 1px solid #666
+}
+.widget ul>li>a {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 3px 10px
+}
+footer {
+	padding-top: 60px;
+	margin: 10px 0;
+	clear: both
+}
+footer a {
+	color: #fff
+}
+.footer-text-2 {
+	color: #000!important;
+	clear: both;
+	font-size: 10px;
+	text-align: left;
+	max-width: 947px
+}
+footer h4, footer p {
+	color: #fff
+}
+footer ul {
+	padding: 0
+}
+footer li {
+	list-style: none
+}
+footer li a {
+	font: 18px Arial, Helvetica, sans-serif;
+	color: #fff
+}
+footer h4 {
+	padding-bottom: 5px
+}
+.breadcrumb {
+	width: 961px
+}
+
+/* 
+Make the Facebook Like box responsive (fluid width)
+https://developers.facebook.com/docs/reference/plugins/like-box/ 
+*/
+/* 
+This element holds injected scripts inside iframes that in 
+some cases may stretch layouts. So, we're just hiding it. 
+*/
+#fb-root {
+    display: none;
+}
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 100% !important;
+}
+
+@media (max-width:767px) {
+.hidden-mobile {
+	display: none
+}
+.navbar-inverse .brand {
+	background: url(img/logo.png) no-repeat;
+	background-size: contain;
+	max-width: 280px;
+	max-height: 57px;
+	width: 100%;
+	clear: both;
+	text-indent: -10000px
+}
+.navbar-inverse .nav-collapse .dropdown-menu a, .navbar-inverse .nav-collapse .nav>li>a {
+	color: #006bbd;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 28px;
+	vertical-align: middle;
+	text-shadow: none
+}
+.navbar-inverse .btn-navbar {
+	background: #f2f2f2;
+	clear: both
+}
+.navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar[disabled] {
+	color: #006bbd;
+	background: #f2f2f2
+}
+.navbar .btn-navbar .icon-bar {
+	color: #006bbd
+}
+.navbar .btn-navbar {
+	clear: both
+}
+.phone {
+	position: absolute;
+	right: 5px;
+	z-index: 2;
+	display: block
+}
+.fa-phone::before {
+	content: ""
+}
+.phone span {
+	color: #fff;
+	font-size: 2em;
+	background-color: #4f6493;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	padding: 5px;
+	line-height: 22pt;
+	width: 39px;
+	height: 39px;
+	box-sizing: border-box;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle
+}
+.navbar li::before {
+	display: none
+}
+.breadcrumb, .navbar .nav {
+	width: auto!important
+}
+}
+@media screen and (max-width:1024px) {
+.hidden-mobile {
+	display: none
+}
+.navbar-inverse .brand {
+	background: url(img/logo.png) no-repeat;
+	background-size: contain;
+	max-width: 280px;
+	max-height: 57px;
+	width: 100%;
+	clear: both;
+	text-indent: -10000px
+}
+.span3 {
+	max-width: 280px
+}
+.span7 {
+	max-width: 620px
+}
+.navbar-inverse .nav-collapse .dropdown-menu a, .navbar-inverse .nav-collapse .nav>li>a {
+	color: #006bbd;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 28px;
+	vertical-align: middle;
+	text-shadow: none
+}
+.navbar-inverse .btn-navbar {
+	background: #f2f2f2;
+	clear: both
+}
+.navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar[disabled] {
+	color: #006bbd;
+	background: #f2f2f2
+}
+.phone {
+	float: right;
+	margin-right: 10px;
+	z-index: 2;
+	display: block
+}
+.fa-phone::before {
+	content: ""
+}
+.phone span {
+	color: #fff;
+	font-size: 2em;
+	background-color: #4f6493;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	padding: 5px;
+	line-height: 22pt;
+	width: 39px;
+	height: 39px;
+	box-sizing: border-box;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle
+}
+.navbar li::before {
+	display: none
+}
+.breadcrumb, .navbar .nav {
+	width: auto!important
+}
+.navbar-relative-top {
+	margin: 0
+}
+}
+@media (max-width:479px) {
+.navbar-inverse .brand {
+	background: url(img/logo_mob.png) no-repeat!important;
+	background-size: contain!important;
+	margin-top: 12px
+}
+.phone {
+	margin-right: 15px
+}
+.phone span {
+	height: 35px;
+	width: 35px;
+	font-size: 1.7em
+}
+.navbar-inverse .btn-navbar {
+	position: relative;
+	left: 14px;
+	bottom: 34px;
+}
+.bottomgap {
+	position: relative;
+	bottom: 20px
+}
+
+}
+.padd_left_5 {
+	padding-left: 5px
+}
+.wp-pagenavi {
+	margin-bottom: 15px;
+}

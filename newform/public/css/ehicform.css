@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* CSS Document */
+<!--
+
+.nitext {
+	margin-bottom: 1em;
+	font-size:9px;
+	font-style:italic;
+}
+.hiddenDiv {
+	display: none;
+	}
+.visibleDiv {
+	display: block;
+	width: 13em;
+	float: right;
+
+	}
+	.visibleDiv1 {
+	display: block;
+
+
+	}
+label
+{
+width: 16em;
+float: left;
+text-align: left;
+margin-right: 0.5em;
+margin-left: 0.5em;
+display: block
+}
+
+
+input, select, textarea
+{
+	border:1px solid #999;
+	background-color: #E1E8F6;
+    color: #4E00C6;
+    font-size: 14px;
+	-webkit-border-radius: 3px;-khtml-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
+	background: -webkit-gradient(linear, left top, left 25, from(#fff), color-stop(6%, #E1E8F6), to(#fff));
+	background: -moz-linear-gradient(top, #fff, #E1E8F6 2px, #fff 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+input [type="text"], select, textarea{width:200px;}
+textarea{
+	height:100px;
+}
+input:hover,select:hover, input:focus,select:focus, textarea:hover, textarea:focus{
+
+border-color: #333;
+background:#fff;
+
+}
+input[type=checkbox], input[type=checkbox]:hover, input[type=checkbox]:focus{
+
+	width:auto;
+}
+fieldset
+{
+	border: 1px solid #B0E0E6;
+    clear: both;
+    margin-bottom: 1em;
+    min-width: 600px;
+    padding: 0 0 1em;
+}
+
+legend
+{
+color: #0079C2;
+    /*display: block;*/
+    font-weight: bold;
+	font-size: 16px;
+    margin-left: 1em;
+    padding: 0;
+}
+legend2
+{
+color: #fff;
+background:#900;
+border: 1px solid #781351;
+padding: 2px 6px
+}
+.apptype{display:inline-block; width:100px; }
+.tip
+{
+	padding: 2px;
+	background-color:#5167C1;
+	BORDER: 1px solid #000000;
+	color: #ffffff;
+	font-size:10px;
+	width: 22em;
+	position:absolute;
+	margin-left:500px;
+	margin-top:45px;
+	visibility:hidden;
+	font-style:italic;
+}
+#Tip0
+{
+	margin-top:0 !important;
+} 
+.tip1
+{
+	padding: 2px;
+	background-color:#5167C1;
+	BORDER: 1px solid #000000;
+	color: #ffffff;
+	font-size:10px;
+	width: 22em;
+	position:absolute;
+	margin-left:550px;
+	margin-top:120px;
+	visibility:hidden;
+	font-style:italic;
+}
+.required
+{
+	font-size:18px;
+	font-weight:bold;
+	color:#900;
+	display:inline;
+
+	}
+.okMessage
+{
+	font-size:18px;
+	font-weight:bold;
+	color:#060;
+	display:inline;
+}
+.reqcontainer
+{
+position:inline;
+}
+.tipcontainer
+{
+position:relative;
+}
+.continueformbutton, .continueformbutton:focus, .continueformbutton:hover  {
+    background: none no-repeat scroll right center #03A503;
+    border: 1px solid #666;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    height: 1.8em;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    margin: -1px 1px 1px -1px;
+    overflow: visible;
+    padding: 0 0.6em 0.2em;
+	width:auto;
+	font-size:22px;
+	font-family:Arial, Helvetica, sans-serif;
+	-webkit-appearance: none;
+}
+-->
